@@ -25,7 +25,7 @@ flowchart TD
     end
 
     subgraph Server [Next.js Server API]
-        API_Chat[/api/chat Route] -->|2. Resolves keys & prompt| LangChain[LangChain Agent]
+        API_Chat["/api/chat Route"] -->|2. Resolves keys and prompt| LangChain[LangChain Agent]
         LangChain -->|3. Streaming Markdown Blocks| API_Chat
     end
 
